@@ -5,7 +5,7 @@ let ModleName = document.querySelector('#ModleName')
 let RamInput = document.querySelector('#Ram')
 let ProcessorInput = document.querySelector('#Processor')
 let GraphicCardInput = document.querySelector('#GraphicCard')
-let number = 1   ;
+let number = 0   ;
 
 
 btnAdd.addEventListener('click' , () =>{
@@ -25,18 +25,24 @@ btnAdd.addEventListener('click' , () =>{
                     </tr>`
                     ; 
     table.innerHTML += template; 
+    console.log("test")
+
+    ModelName.value  =  `` ;
+    RamInput.value  =  `` ;
+    ProcessorInput.value  =  ``  ;
 
 
-    let btnRemove= document.querySelector('#removeBtn')
+    // let btnRemove= document.querySelector('#removeBtn')
 
-    btnRemove.addEventListener("click", (event) => {
-        event.target.parentElement.parentElement.remove();
+    //  btnRemove.addEventListener("click", (event) => {
+    //      event.target.parentElement.parentElement.remove();
 });
+  
 
-});
+//  });
 const deleteRow = (event) => {
- event.target.parentElement.parentElement.remove();
-console.log("test")
+    event.target.parentElement.parentElement.remove();
+    console.log("test")
     }
 
 
