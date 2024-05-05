@@ -10,7 +10,7 @@ let number = 1   ;
 
 btnAdd.addEventListener('click' , () =>{
     number++;
-    let Model = ModleName.value;
+    let Model = ModelName.value;
     let ram = RamInput.value;
     let Processor = ProcessorInput.value;
 
@@ -21,7 +21,7 @@ btnAdd.addEventListener('click' , () =>{
                         <td>${Model}</td>
                         <td>${ram}</td>
                         <td>${Processor}</td>
-                        <td><button onclick="deleteRow(event)" type="button" id="removeBtn" class="btn btn-danger " >Delete Model</button></td>
+                        <td><button onclick="deleteRow(event)" type="button" id="removeBtn" class="btn btn-danger w-100 " >Delete Model</button></td>
                     </tr>`
                     ; 
     table.innerHTML += template; 
